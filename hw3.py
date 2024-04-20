@@ -10,10 +10,14 @@ def get_days_from_today(date):
         return "Введено не вірний формат дати."
 print(get_days_from_today("2024-02-23"))
 
+
+# **************************************************
+
+
 import random
 
 def get_numbers_ticket(min, max, quantity):
     lottery = random.sample(range (min, max), quantity)
-    print(sorted(lottery))
+    print(f"Ваші лотерейні числа: {sorted(lottery)}")
 
 get_numbers_ticket(1, 10, 3)
