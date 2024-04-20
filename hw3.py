@@ -17,7 +17,10 @@ print(get_days_from_today("2024-02-23"))
 import random
 
 def get_numbers_ticket(min, max, quantity):
+    if min < 1 or max > 1000 or quantity < 1 or quantity > (max - min + 1):
+        return []
     lottery = random.sample(range (min, max), quantity)
-    print(f"Ваші лотерейні числа: {sorted(lottery)}")
+    return sorted(lottery)
 
-get_numbers_ticket(1, 10, 3)
+lottery_numbers = get_numbers_ticket(1, 100, 7)
+print("Ваші лотерейні числа:", lottery_numbers)
