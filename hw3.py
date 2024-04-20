@@ -13,7 +13,7 @@ print(get_days_from_today("2024-02-23"))
 import random
 
 def get_numbers_ticket(min, max, quantity):
-    lotery = random.sample(range (min, max), quantity)
-    print(sorted(lotery))
+    lottery = random.sample(range (min, max), quantity)
+    print(sorted(lottery))
 
 get_numbers_ticket(1, 10, 3)
